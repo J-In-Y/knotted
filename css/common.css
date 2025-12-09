@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+:root {
+    --mainy-color : #f9e37f;
+    --mainp-color : #f2a7e7;
+    --maing-color : #b8e4c6;
+    --subb-color : #bee1f0;
+    --suby-color : #f8f1c4;
+    --subp-color : #ffc4dc;
+}
+#wrap { min-width: 310px;}
+.inner { max-width: 1600px;  margin: 0 auto; padding: 0 20px;}
+body { font-family: 'Paperozi','Noto Sans KR',sans-serif; font-size: 1.6rem; line-height: 1.5; }
+
+#header { height: 100px; color: #333; position: relative; background: #fff; transition: all 0.5s; }
+#header .inner { display: flex; justify-content: space-between; align-items: center; height: 100%;  }
+
+@media (max-width:600px) {
+ #header { height: 80px; }   
+ #header .ham  { top: 20px;}
+}
+
+#header h1 img { width: 150px; }
+#header .gnb { display: flex; }
+#header .gnb > li { position: relative;}
+#header .gnb > li::after {transition: all 0.5s; content: ""; display: block; width: 0; height: 3px; background: var(--mainp-color); margin: auto; }
+
+#header .gnb > li:hover::after{ width: 100%; }
+#header.active {transition: background 0.5s; border-bottom: 1px solid #eee; background: linear-gradient(30deg, #f8f1c4, #ffe6c0, #ffdbc1, #ffd2c6, #ffcbcd, #ffc9db); color: #fff; }
+
+/* background-image: linear-gradient(to right top, #f8f1c4, #ffe6c0, #ffdbc1, #ffd2c6, #ffcbcd, #ffc9db, #f9c9ed, #e9cdff, #c5d9ff, #93e7ff, #62f3ff, #5ffbf1); */
+
+#header .gnb > li > a {transition: all 0.5s; display: block; padding: 35px; font-size: 2rem; height: 97px; }
+#header .gnb > li:hover > a { font-weight: 700;}
+.depth2 { position: absolute; left: 0; top: 100px; width: 100%; text-align: center; }
+
+.depth2 >li >a {transition: all 0.3s; display: block; padding: 10px 20px ; }
+.depth2 >li:hover > a { color: var(--mainp-color); font-weight: 600; }
+
+#header .depth2 {display: none; padding-top: 5px; z-index: 30;}
+#header .depth2_bg {display: none; position: absolute; left: 0; top: 100px; width: 100%; height: 140px; background: linear-gradient(110deg ,#f8f1c4, #ffe6c0, #ffdbc1, #ffd2c6, #ffcbcd, #ffc9db); z-index: 20;}
+
+/* ham */
+#header .ham { cursor: pointer; display: none; flex-direction: column; justify-content: center; gap: 8px; width: 45px; height: 45px; padding: 4px; }
+.ham span { width: 28px; height: 3px; background:#111; 
+  transition: all 0.3s ease-in-out; }
+.ham span.active:nth-child(1) { transform: translateY(6px) rotate(45deg); width: 34px; }
+.ham span.active:nth-child(2) { transform: translateY(-5px) rotate(-45deg); width: 34px; }
+
+/* mgnb */
+
+.mgnb_wrap {display: none; position: fixed; left: 0; top: 0; height: 100vh; width: 100%; background: #fff; z-index: 50;}
+.mgnb {  width: 80%; margin: 110px auto; background: #fff;  border-top: 2px solid #aaa;}
+.mgnb > li {  border-bottom: 1px solid #aaa; }
+.mgnb > li:last-child { border-bottom: 2px solid #aaa;}
+.mgnb > li > a { pointer-events: none;  display: flex;  align-items: center;  justify-content: space-between;
+  padding: 20px; }
+.mgnb > li > a .emoji {  margin-right: 8px;  }
+.mgnb > li > a .emoji img { width: 24px;height: 24px; margin-top: 5px;}
+.mgnb > li > a .open {  display: none; /* 기본은 닫힘 상태 */}
+.mgnb_txt1 { margin-right: auto;}
+
+/* 플러스 / 마이너스 */
+.toggle {  width: 16px;  height: 16px;  position: relative;}
+.toggle::before,
+.toggle::after {  content: "";  position: absolute;  background: #111;  left: 50%;
+  top: 50%;  transform: translate(-50%, -50%);}
+.toggle::before {  width: 12px;  height: 2px;}
+.toggle::after {  width: 2px;  height: 12px;}
+
+/* 열린 상태 */
+.mgnb > li.active > a { font-weight: 700;}
+.mgnb > li.active > a .toggle::after {  display: none; }/* 마이너스만 남기기 */
+.mgnb > li.active > a .emoji.closed {  display: none;}
+.mgnb > li.active > a .emoji.open {  display: inline-block;}
+
+/* 2차 메뉴 */
+.mdepth2 {  display: none;  }
+.mdepth2 li { padding-bottom: 10px; }
+.mdepth2 li:hover >a { font-weight: 600;}
+.mdepth2 a { display: block; padding: 10px 20px;}
+
+
+/* login */
+#header .login { width: 100px; z-index: 99;}
+#header .login img { width: 100%;}
+
+@media (max-width:1200px) {
+    #header .ham {display: inline-flex; position: absolute; right: 5%; top: 27px; z-index: 60; }
+    #header .gnb { display: none;}
+    #header nav { order: 3;}
+    #header .login {order: 2; width: 80px; margin-left: auto ; margin-right: 10vw;}
+    
+}
+
+@media (max-width:1000px) {
+    #header h1 img { width: 135px; }
+}
+
+@media (max-width:800px) {
+    #header h1 img { width: 110px;}
+    #header .login { margin-right: 12vw;}
+}
+@media (max-width:600px) {
+    #header .ham { top: 16px;}
+    #header .login { width: 70px; margin-right: 13vw;}
+}
+@media (max-width:500px) {
+    #header h1 img { width: 90px; }
+}
+
+#footer { background: url(../images/logo/f_bg.png) no-repeat center / cover; padding: 100px 20px; border-top: 1px solid #666; }
+#footer .inner { display: grid; grid-template-columns: 1fr 1fr 1fr ; gap: 30px 50px; flex-wrap: wrap; }
+#footer .inner address { text-wrap: nowrap;  }
+#footer span {display: block; font-weight: 700; font-size: 1.8rem; margin-bottom: 20px;}
+#footer .f_sns .f_sns_box { display: flex; gap: 10px; }
+#footer .f_sns div a img { width: 40px; }
+#footer .copy { display: flex; gap: 30px; margin-top: 40px; font-weight: 500; color: #666; text-wrap: nowrap; }
+#footer .copy br { display: none;}
+
+
+@media (max-width:1200px) { 
+    #footer { background: url(../images/logo/f_bg.png) no-repeat right / cover;}
+    #footer .inner { grid-template-columns: 1fr 1fr ; gap: 30px 40px; }
+    #footer .copy { flex-wrap: wrap; margin-top: 0; gap: 20px;}
+}
+@media (max-width:1000px) { 
+    #footer .inner { grid-template-columns: 1fr ; gap: 20px; }
+}
+@media (max-width:800px) {         
+    #footer { padding: 50px 20px; background: url(../images/logo/f_bg_mo.jpg) no-repeat center / cover;}
+    #footer { font-size: 1.2rem;}
+    #footer span { font-size: 1.4rem;}    
+    #footer .f_sns div a img { width: 30px; }
+    #footer .inner address { text-wrap: wrap;  }
+}
+@media (max-width:400px) {     
+    #footer .copy br { display: block;}
+} 
+
+.gotop { position: fixed; right: 50px;bottom: 50px; width: 40px; height: 40px; z-index: 20;}
+.gotop img { width: 100%; background: var(--suby-color); border-radius: 50%;}
+.gotop:hover img { padding: 2px; }
+
+@media (max-width:1000px) { 
+.gotop { position: fixed; right: 30px;bottom: 30px; width: 30px; height: 30px; z-index: 20;}
+}

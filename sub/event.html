@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub_story</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/logo/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!-- aos -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <!-- js -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script><!-- 제이쿼리 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- 스와이퍼 -->
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- aos -->
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/sub.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="../index.html"><img src="../images/logo/logo.png" alt="메인로고"></a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="../sub/menu.html">MENU</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/menu.html#section1">도넛</a></li>
+                                <li><a href="../sub/menu.html#section2">음료</a></li>
+                                <li><a href="../sub/menu.html#section3">케이크</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sub/store.html">STORE</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/store.html">제품</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sub/event.html">EVENT</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/event.html#section4">진행중</a></li>
+                                <li><a href="../sub/event.html#section5">종료</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sub/story.html">STORY</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/story.html#section6">브랜드</a></li>
+                                <li><a href="../sub/story.html#section7">콜라보</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="ham">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="../sub/menu.html">
+                                    <span class="emoji closed"><img src="../images/logo/emoji_close.png"
+                                            alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">MENU</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/menu.html#section1">도넛</a></li>
+                                    <li><a href="../sub/menu.html#section2">음료</a></li>
+                                    <li><a href="../sub/menu.html#section3">케이크</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../sub/store.html"><span class="emoji closed"><img
+                                            src="../images/logo/emoji_close.png" alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">STORE</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/store.html">제품</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../sub/event.html"><span class="emoji closed"><img
+                                            src="../images/logo/emoji_close.png" alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">EVENT</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/event.html#section4">진행중</a></li>
+                                    <li><a href="../sub/event.html#section5">종료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../sub/story.html"><span class="emoji closed"><img
+                                            src="../images/logo/emoji_close.png" alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">STORY</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/story.html#section6">브랜드</a></li>
+                                    <li><a href="../sub/story.html#section7">현재</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="login"><a href="../sub/order.html"><img src="../images/logo/login.png" alt="로그인"></a></div>
+            </div>
+
+            <div class="depth2_bg"></div>
+        </header>
+
+        <div class="sub_visual">
+            <div class="sub_bg2">
+                <h2>event</h2>
+
+                <div class="sub_btn event_btn">
+                    <a class="active" href="#">진행중</a>
+                    <a href="#">종료</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="event_main">
+            <div class="inner">
+                <div class="event_list">
+                    <ul>
+                        <li><a href="#"><img src="../images/banner/banner_p_2.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_3.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_1.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_2.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_4.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_5.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_6.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_7.png" alt="이벤트">
+                                <div class="event_box">진행중</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="event_list">
+                    <ul>
+                        <li><a href="#"><img src="../images/banner/banner_p_15.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_16.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_9.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_11.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_12.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_13.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_14.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_17.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_18.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="../images/banner/banner_p_19.png" alt="이벤트">
+                                <div class="event_box">종료</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <address>
+                    <p><span>COMPANY INFORMATION</span></p>
+                    <p>주식회사 지에프에프지 <br>
+                        서울특별시 강남구 도산대로 326 <br>
+                        사업자등록번호 : 248-81-00620 <br>
+                        통신판매업신고번호 : 2020-서울강남-02297 <br>
+                        대표이사 : 이준범</p>
+                </address>
+
+                <div class="footer_box">
+                    <p><span>Knotted America Inc.</span></p>
+                    <p>#104 & #105 1411 W Sunset Blvd, <br>
+                        Los Angeles, Ca 90026, USA <br>
+                        +1-213-316-6296 </p>
+                </div>
+
+                <div class="f_sns">
+                    <p><span>SOCIAL</span></p>
+                    <div class="f_sns_box">
+                        <div><a href="#"><img src="../images/logo/kakao.png" alt="kakao"></a></div>
+                        <div><a href="#"><img src="../images/logo/insta.png" alt="instagram"></a></div>
+                    </div>
+                </div>
+
+                <div class="f_call">
+                    <p><span>HELP</span></p>
+                    <p>고객센터 : 1800 - 6067 <br>
+                        운영시간 : 평일 09:00 - 12:00 <br>
+                        휴게시간 : 13:00 - 15:00 <br>
+                        주말 및 공휴일 : 휴무</p>
+                </div>
+
+                <p class="copy">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">Copyright &copy; 2023 Knotted. <br> All Right Reserved.</a>
+                </p>
+
+            </div>
+        </footer>
+
+        <div class="gotop">
+            <div><a href="#"><img src="../images/logo/gotop.png" alt="gotop"></a></div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub_store</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/logo/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!-- aos -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <!-- js -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script><!-- 제이쿼리 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- 스와이퍼 -->
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- aos -->
+    <script defer src="../js/common.js"></script>
+    <script defer src="../js/sub.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="../index.html"><img src="../images/logo/logo.png" alt="메인로고"></a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="../sub/menu.html">MENU</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/menu.html#section1">도넛</a></li>
+                                <li><a href="../sub/menu.html#section2">음료</a></li>
+                                <li><a href="../sub/menu.html#section3">케이크</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sub/store.html">STORE</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/store.html">제품</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sub/event.html">EVENT</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/event.html#section4">진행중</a></li>
+                                <li><a href="../sub/event.html#section5">종료</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sub/story.html">STORY</a>
+                            <ul class="depth2">
+                                <li><a href="../sub/story.html#section6">브랜드</a></li>
+                                <li><a href="../sub/story.html#section7">콜라보</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="ham">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="../sub/menu.html">
+                                    <span class="emoji closed"><img src="../images/logo/emoji_close.png"
+                                            alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">MENU</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/menu.html#section1">도넛</a></li>
+                                    <li><a href="../sub/menu.html#section2">음료</a></li>
+                                    <li><a href="../sub/menu.html#section3">케이크</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../sub/store.html"><span class="emoji closed"><img
+                                            src="../images/logo/emoji_close.png" alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">STORE</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/store.html">제품</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../sub/event.html"><span class="emoji closed"><img
+                                            src="../images/logo/emoji_close.png" alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">EVENT</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/event.html#section4">진행중</a></li>
+                                    <li><a href="../sub/event.html#section5">종료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../sub/story.html"><span class="emoji closed"><img
+                                            src="../images/logo/emoji_close.png" alt="이모지"></span>
+                                    <span class="emoji open"><img src="../images/logo/emoji_open.png" alt="이모지"></span>
+                                    <div class="mgnb_txt1">STORY</div>
+                                    <span class="toggle"></span>
+                                </a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/story.html#section6">브랜드</a></li>
+                                    <li><a href="../sub/story.html#section7">현재</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="login"><a href="../sub/order.html"><img src="../images/logo/login.png" alt="로그인"></a></div>
+            </div>
+
+            <div class="depth2_bg"></div>
+        </header>
+
+        <div class="sub_visual">
+            <div class="sub_bg3">
+                <h2>store</h2>
+
+                <div class="sub_btn event_btn">
+                    <a class="active" href="#">제품</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="store_main">
+            <div class="inner">
+                <div class="store_btn">
+                    <button class="active">문구</button>
+                    <button>파티용품</button>
+                    <button>홈데코/키링</button>
+                    <button>아웃도어</button>
+                </div>
+
+
+
+                <div class="store_list">
+
+                    <div class="s_li1">
+                        <h3>문구</h3>
+                        <div class="s_dashed"></div>
+                        <div class="s_li">
+                            <ul>
+                                <li><a href="#">
+                                        <img src="../images/product/img2_01.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드]</span> 슈가베이커리 인형 4종 + 더스트백</dt>
+                                            <dd>23,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img src="../images/product/kiring_2.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드]</span> 슈가베어 가드 파우치 키링</dt>
+                                            <dd>19,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img src="../images/product/y_b1.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>스마일 옐로우 9종 굿즈 기프트 세트</dt>
+                                            <del>120,000원</del>
+                                            <dd class="red">10%</dd>
+                                            <dd>108,000원</dd>
+
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/y_note1.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>스마일 리걸 노트</dt>
+                                            <dd>6,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/p_note1.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>크림버니 리걸 노트</dt>
+                                            <dd>6,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/img4.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>스마일 반자동 투명 우산</dt>
+                                            <dd>16,800원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img src="../images/product/img7.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>HBD 메시지 카드 & 데코 스티커 세트</dt>
+                                            <dd>3,500원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/img10.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>스마일 쇼핑백</dt>
+                                            <dd>1,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="s_li2">
+                        <h3>파티용품</h3>
+                        <div class="s_dashed"></div>
+                        <div class="s_li">
+                            <ul>
+                                <li><a href="#">
+                                        <img src="../images/product/img2_01.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드]</span> 슈가베이커리 인형 4종 + 더스트백</dt>
+                                            <del>25,000원</del>
+                                            <dd class="red">10%</dd>
+                                            <dd>22,500원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img src="../images/product/cake_pick1.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>HBD 케이크픽</dt>
+                                            <dd>4,800원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/img5.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>스마일 케이크 캔들</dt>
+                                            <dd>4,800원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="s_li3">
+                        <h3>홈데코/키링</h3>
+                        <div class="s_dashed"></div>
+                        <div class="s_li">
+                            <ul>
+                                <li><a href="#">
+                                        <img src="../images/product/kiring_1.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드]</span> 슈가베어 미니 파우치 키링</dt>
+                                            <dd>16,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/ball.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드X파이렉스]</span> 믹싱볼 3P 세트</dt>
+                                            <dd>29,900원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/cub.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드X파이렉스]</span> 계량컵 3P 세트</dt>
+                                            <dd>36,800원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/img3.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드X펠로우]</span> 스마일 스트로우 텀블러 16oz</dt>
+                                            <dd>59,900원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img src="../images/product/bt2.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드X덴띠끄]</span> 스마일 트래블키트</dt>
+                                            <dd>9,900원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="s_li4">
+                        <h3>아웃도어</h3>
+                        <div class="s_dashed"></div>
+                        <div class="s_li">
+                            <ul>
+                                <li><a href="#">
+                                        <img src="../images/product/img1_01.png" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드]</span> 크림버니 드라이버 커버</dt>
+                                            <dd>31,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img src="../images/product/golf.png" alt="마켓이미지">
+                                        <dl>
+                                            <dt><span>[노티드X볼빅]</span> 러블리 슈가베어 골프공&볼마커 세트</dt>
+                                            <dd>32,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                                <li><a href="#">
+                                        <img class="w_img" src="../images/product/img6_02.jpg" alt="마켓이미지">
+                                        <dl>
+                                            <dt>스마일 농구공</dt>
+                                            <dd>65,000원</dd>
+                                        </dl>
+                                    </a>
+                                    <div class="cart"><a href="#"><img src="../images/logo/shopping-cart.png"
+                                                alt="카트"></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <address>
+                    <p><span>COMPANY INFORMATION</span></p>
+                    <p>주식회사 지에프에프지 <br>
+                        서울특별시 강남구 도산대로 326 <br>
+                        사업자등록번호 : 248-81-00620 <br>
+                        통신판매업신고번호 : 2020-서울강남-02297 <br>
+                        대표이사 : 이준범</p>
+                </address>
+
+                <div class="footer_box">
+                    <p><span>Knotted America Inc.</span></p>
+                    <p>#104 & #105 1411 W Sunset Blvd, <br>
+                        Los Angeles, Ca 90026, USA <br>
+                        +1-213-316-6296 </p>
+                </div>
+
+                <div class="f_sns">
+                    <p><span>SOCIAL</span></p>
+                    <div class="f_sns_box">
+                        <div><a href="#"><img src="../images/logo/kakao.png" alt="kakao"></a></div>
+                        <div><a href="#"><img src="../images/logo/insta.png" alt="instagram"></a></div>
+                    </div>
+                </div>
+
+                <div class="f_call">
+                    <p><span>HELP</span></p>
+                    <p>고객센터 : 1800 - 6067 <br>
+                        운영시간 : 평일 09:00 - 12:00 <br>
+                        휴게시간 : 13:00 - 15:00 <br>
+                        주말 및 공휴일 : 휴무</p>
+                </div>
+
+                <p class="copy">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">Copyright &copy; 2023 Knotted. <br> All Right Reserved.</a>
+                </p>
+
+            </div>
+        </footer>
+
+        <div class="gotop">
+            <div><a href="#"><img src="../images/logo/gotop.png" alt="gotop"></a></div>
+        </div>
+</body>
+
+</html>
